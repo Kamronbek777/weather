@@ -1,39 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-
-    
+    <div class="container">
+        <div class="start">
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="light-mode">Light Mode</span>
+                <span class="dark-mode">Dark Mode</span>
+              </button>
+              <div id="google_translate_element"></div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                
+                <a href="./index.html" class="header__logo__link">
+                    <p class="header__logo">Kamronbek</p>
+                </a>
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a href="./index.html" class="header__list__link">
+                            <p class="header__list__text">Home</p>
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="../weather/weather.html" class="header__list__link">Weather-app</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="../currency/index.html" class="header__list__link">Currency-converter</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="../translator/index.html" class="header__list__link">Translator</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="../PWA/index.html" class="header__list__link">Portfolio</a>
+                    </li>
+                </ul>
+                <button class="header__burger" type="button"><i class="fa-solid fa-bars fa-xl header__menu" style="color: #ffffff;"></i></button>
             </nav>
         </div>
     </header>
+    <main class="main">
+        <section class="section__1">
+            <div class="container">
+                <div class="section__1__wrapper">
+                    <div class="section__1__main__txt">
+                        <!-- <h1 class="section__1__title">Hello, I'm Kamronbek. Who am I?</h1> -->
+                        <h1>It's <span>Kamronbek</span></h1>
+                        <h3 class="text-animation">
+                            I'm a <span></span>
+                        </h3>
+                        <p class="section__1__text">
+                            I'm a web developer and graphic designer. I specialize <br> in creating modern, responsive websites and engaging <br> user experiences. You can see further information about me <br> in my portfolio app below.
+                         </p>
+                        <!-- <div class="section__1__links">
+                            <a href="#" class="section__1__link">Portfolio</a>
+                        </div> -->
+                        <button class="glow-on-hover" type="button">MY PORTFOLIO &nbsp; &nbsp;<i class="fa fa-user"></i> </button>
+                    </div>
+                    <!-- <div class="section__1__languages">
+                        <img src="./images2/csharp.svg" alt="C#" class="csharp">
+                        <img src="./images2/css.svg" alt="CSS" class="css">
+                        <img src="./images2/html.svg" alt="HTML" class="html">
+                        <img src="./images2/javascript.svg" alt="JavaScript" class="js">
+                        <img src="./images2/python.svg" alt="Python" class="python">
+                        <img src="./images2/693-removebg.png" alt="Main image" class="main__language__logo">
+                    </div> -->
+                    <img src="./images2/gradient-coding-logo-template_23-2148809439.avif" alt="tech" class="section__1__main__image">
+                </div>
+            </div>
+        </section>
 
 
 
-    <main>
-        
+        <section class="section__2">
+            <div class="container">
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">django</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Tailwind</p>
+                        <div class="progress-con">
+                            <p class="prog-text">76%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Bootstrap</p>
+                        <div class="progress-con">
+                            <p class="prog-text">59%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">JavaScript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <p class="section__3__title">My Projects</p>
+
+        <section class="banner">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1"><img src="./images2/dragon_1.jpg" alt=""></div>
+                <div class="item" style="--position: 2"><img src="./images2/dragon_2.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="./images2/dragon_3.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="./images2/dragon_4.jpg" alt=""></div>
+                <div class="item" style="--position: 5"><img src="./images2/dragon_5.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="./images2/dragon_6.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="./images2/dragon_7.jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="./images2/dragon_8.jpg" alt=""></div>
+                <div class="item" style="--position: 9"><img src="./images2/dragon_9.jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="./images2/dragon_10.jpg" alt=""></div>
+            </div>
+            <div class="content">
+                <!-- <h1 data-content="CSS ONLY">
+                    CSS ONLY
+                </h1> -->
+                <div class="model"></div>
+            </div>
+        </section>
+        <section class="section__3">
+            <div class="container">
+                <h2 class="section__3__title">What IDE's I use</h2>
+                <div class="section__3__wrapper">
+                    <p class="section__3__article">You can also install and use these programms. Just click on the cards.</p>
+                    <div class="section__3__ide">
+                        <a class="editor" href="https://code.visualstudio.com/" target="_blank">
+                            <img src="./images2/pngegg (1).png" alt="vs code icon">
+                            <h2 style="margin-top: 15px;">VS Code</h2>
+                            <p>VS Code supports almost every major programming language.</p>
+                        </a>
+                        <a class="editor" href="https://www.jetbrains.com/ru-ru/webstorm/" target="_blank">
+                            <img src="./images2/webstorm-icon.svg" alt="webstorm icon">
+                            <h2 style="margin-top: 15px;">WebStorm</h2>
+                            <p>WebStorm is a powerful JavaScript IDE.</p>
+                        </a>
+                        <a class="editor" href="https://clickup.com" target="_blank">
+                            <img src="./images2/clickup-symbol-seeklogo.svg" alt="clickup icon">
+                            <h2 style="margin-top: 15px;">ClickUp</h2>
+                            <p>ClickUp is a powerful ToDo list for developers</p>
+                        </a>
+                        <a class="editor" href="https://github.com" target="_blank">
+                            <img src="./images2/6f3e7cd48bd6b8103857adffe9b144fe.png" alt="GitHub icon">
+                            <h2 style="margin-top: 15px;">GitHub</h2>
+                            <p>GitHub is a popular version control system (VCS).</p>
+                        </a>
+                    <a class="section__3__more glow-on-hover">Show more <i class="fa-solid fa-arrow-down"></i></a>
+
+
+                            <a class="editor hide" href="https://slack.com/" target="_blank">
+                                <img src="./images2/pngwing.com.png" alt="slack icon">
+                                <h2 style="margin-top: 15px;">Slack</h2>
+                                <p>Slack is a powerful messanger for developers</p>
+                            </a>
+                            <a class="editor hide" href="https://www.figma.com" target="_blank">
+                                <img src="./images2/7564187_figma_logo_brand_icon.png" alt="figma icon">
+                                <h2 style="margin-top: 15px;">Figma</h2>
+                                <p>Figma is a powerful design tool for creating user interfaces</p>
+                            </a>
+                            <a class="editor hide" href="https://www.jetbrains.com/ru-ru/pycharm/" target="_blank">
+                                <img src="./images2/Pycharm.svg" alt="pycharm icon">
+                                <h2 style="margin-top: 15px;">PyCharm</h2>
+                                <p>PyCharm is a powerful IDE for Python developing</p>
+                            </a>
+                            <a class="editor hide" href="https://tailwind.com" target="_blank">
+                                <img src="./images2/pngwing.com (1).png" alt="Tailwind icon" style="width: 150px;">
+                                <h2 style="margin-top: 15px;">Tailwind</h2>
+                                <p>Tailwind is a comfortable utility-first CSS framework</p>
+                            </a>
+                    <a class="section__3__less glow-on-hover hide">Show less <i class="fa-solid fa-arrow-up"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="section__3__title806">Contact Me</h2>
+            <form id="contactForm">
+                <div class="input-box">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="glow-on-hover">Send Message</button>
+            </form>
+        </section>
     </main>
-
 
 
     <footer>
         <div class="container">
-
+            <div class="footer__wrapper">  
+                <ul class="footer__list__2">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="../currency/index.html">Currency-converter</a></li>
+                    <li><a href="../weather/weather.html">Weather-forecast</a></li>
+                    <li><a href="../translator/index.html">Translator</a></li>
+                    <li><a href="../PWA/index.html">Portfolio-app</a></li>
+                </ul>
+                <ul class="footer__info__list">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__wrapper__2">
+                <ul class="footer__list">
+                    <li><a href="#"><i class="fa-brands fa-instagram instagram"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li> -->
+                    <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                </ul> 
+            </div>
+            <p class="copyright">&copy; 2023 My Personal Website | All rights reserved.</p>
         </div>
-    </footer>
-
-
-
+    </footer>   
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
